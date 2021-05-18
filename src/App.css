@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  width: 300px;
+  height: fit-content;
+  margin-top: 6rem;
+  border: 1px solid green;
+}
+
+.form-header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: stretch;
+  border: solid 2px #2980ba;
+  background-color: #2980ba;
+  color: white;
+}
+
+.form-input {
+  width: stretch;
+  height: 2rem;
+}
+
+.submit-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 3rem;
+}
+
+.todo-list {
+  display: flex;
+  flex-flow: row;
+  justify-content: left;
+}
+
+.delete-button {
+  margin-right: 1rem;
+}
+
