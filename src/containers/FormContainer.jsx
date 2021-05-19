@@ -21,18 +21,20 @@ export default function FormContainer({ addTodo }) {
 
     return (
         <form onSubmit={handleSubmit}>
-            <div className="form-header">
-                <h4>TO-DO LIST</h4>
-                <input className="submit-button" type="submit" value="+" />
-            </div>
-            <div>
-                <input 
-                    className="form-input" 
-                    type="text" 
-                    placeholder="Add New Todo"
-                    value={formData} 
-                    onChange={handleChange} 
-                />
+            <div className="form-content">
+                <div className="form-header">
+                    <h4>TO-DO LIST</h4>
+                    <input className="submit-button" type="submit" value="+" />
+                </div>
+                <div>
+                    <input 
+                        className="form-input" 
+                        type="text" 
+                        placeholder="Add New Todo"
+                        value={formData} 
+                        onChange={handleChange} 
+                    />
+                </div>
             </div>
             {formData.length === 0 || formData.length > 25 ? <p className="todo-warning">*must be between 1-25 characters</p> : null}
         </form>

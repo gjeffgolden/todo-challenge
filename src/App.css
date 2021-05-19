@@ -13,7 +13,11 @@
   width: 300px;
   height: fit-content;
   margin-top: 6rem;
-  border: 1px solid green;
+  border: 2px solid green;
+}
+
+.form-content {
+  border: solid 4px #2980ba;
 }
 
 .form-header {
@@ -22,7 +26,6 @@
   justify-content: space-between;
   width: stretch;
   height: auto;
-  border: solid 2px #2980ba;
   background-color: #2980ba;
   color: white;
   font-size: 1.5rem;

@@ -11,8 +11,8 @@ function App() {
   }
 
   const deleteTodo = (todoToDelete) => {
-    const newTodoList = todos.filter(todo => todo !== todoToDelete)
-    setTodos(newTodoList)
+    const newTodoArray = todos.filter(todo => todo !== todoToDelete)
+    setTodos(newTodoArray)
   }
 
   return (
