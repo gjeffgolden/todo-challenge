@@ -9,9 +9,14 @@ export default function FormContainer({ addTodo }) {
     }
 
     const handleSubmit = (event) => {
-        event.preventDefault()
-        addTodo(formData)
-        setFormData('')
+        if (formData.length > 0 && formData.length < 26) {
+            event.preventDefault()
+            addTodo(formData)
+            setFormData('')
+        } else {
+            event.preventDefault()
+            console.log("Todos must be between 1 and 25 characters.")
+        }
     }
 
     return (
@@ -29,6 +34,7 @@ export default function FormContainer({ addTodo }) {
                     onChange={handleChange} 
                 />
             </div>
+            {formData.length === 0 || formData.length > 25 ? <p className="todo-warning">*must be between 1-25 characters</p> : null}
         </form>
     )
 }

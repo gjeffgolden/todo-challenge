@@ -47,15 +47,20 @@
   padding-right: 0.5rem;
 }
 
+.submit-button:hover {
+  cursor: pointer;
+}
+
 .todo-list {
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   justify-content: left;
 }
 
 .todo-list-gray {
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
+  overflow: hidden;
   justify-content: left;
   background-color: #f9f9f9;
 }
@@ -70,6 +75,20 @@
 
 .delete-button {
   align-self: center;
+  color: red;
+}
+
+.delete-button:hover {
+  cursor: pointer;
+}
+
+.todo-warning {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  padding-left: 0.5rem;
+  padding-bottom: 0.25rem;
+  font-size: 0.75rem;
   color: red;
 }
 
