@@ -44,16 +44,27 @@
   color: white;
   font-size: 3rem;
   padding: 0;
+  padding-right: 0.5rem;
 }
 
 .todo-list {
   display: flex;
   flex-flow: row;
   justify-content: left;
-  border-bottom: solid 1px gray;
+}
+
+.todo-list-gray {
+  display: flex;
+  flex-flow: row;
+  justify-content: left;
+  background-color: #f9f9f9;
 }
 
 .todo-list p {
+  margin-left: 0.5rem;
+}
+
+.todo-list-gray p {
   margin-left: 0.5rem;
 }
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
 
-export default function TodoItem({ todo, deleteTodo }) {
+export default function TodoItem({ todo, deleteTodo, dynamicClass }) {
 
     const [showDeleteButton, setShowDeleteButton] = useState(false)
 
@@ -19,7 +19,7 @@ export default function TodoItem({ todo, deleteTodo }) {
 
     return (
         <div 
-            className="todo-list" 
+            className={dynamicClass}
             onMouseEnter={handleMouseEnter} 
             onMouseLeave={handleMouseLeave}
         >
