@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto&display=swap');
+
 .App {
   text-align: center;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .main-container {
@@ -67,10 +70,12 @@
 
 .todo-list p {
   margin-left: 0.5rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .todo-list-gray p {
   margin-left: 0.5rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .delete-button {
