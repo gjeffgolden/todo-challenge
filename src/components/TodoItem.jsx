@@ -1,12 +1,9 @@
 import React, { useState } from 'react'
+import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
 
 export default function TodoItem({ todo, deleteTodo }) {
 
     const [showDeleteButton, setShowDeleteButton] = useState(false)
-
-    const toggleDelete = () => {
-        setShowDeleteButton(!showDeleteButton)
-    }
 
     const handleClick = () => {
         deleteTodo(todo)
@@ -26,7 +23,7 @@ export default function TodoItem({ todo, deleteTodo }) {
             onMouseEnter={handleMouseEnter} 
             onMouseLeave={handleMouseLeave}
         >
-            {showDeleteButton ? <button className="delete-button" onClick={handleClick}>-</button> : null}
+            {showDeleteButton ? <DeleteOutlineIcon className="delete-button" onClick={handleClick} /> : null}
             <p>{todo}</p>
         </div>
     )
